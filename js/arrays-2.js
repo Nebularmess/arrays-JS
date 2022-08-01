@@ -71,14 +71,14 @@ if (eleccionTarj == 1) {
             tarjetaCreditoHTML.className = 'card-registrada'
             tarjetaCreditoHTML.innerHTML = `<h2 class= "card__titulo">TARJETA CREDITO</h2> <span class="card__elementos">Titular: ${tarjetaCredito.nombre}</span>  <span  class="card__elementos">Banco: ${tarjetaCredito.banco}</span> <span  class="card__elementos">Fecha de nacimiento: ${tarjetaCredito.fechaNac}</span> <span  class="card__elementos">DNI: ${tarjetaCredito.dni}</span> <span  class="card__elementOS">Domicilio: ${tarjetaCredito.domicilio}</span>`
         }
-    }
-    eleccion = prompt('Confirma la denuncia de la tarjeta de credito perteneciente al banco ' + lista[2] + ' a nombre de ' + lista[0] + '? Ingrese 1 para confirmar y 0 para desestimar')
-    while (eleccion != 0 && eleccion != 1) {
-        eleccion = prompt ('Opción equivocada vuelva a ingresar: 1 para confirmar denuncia, 0 para desestimarla.')
-    }
-    if (eleccion == 1) {
-        alert ('Su tarjeta ha sido denunciada, pongase en contacto con su banco para recibir información respectiva a la nueva')
-        tarjetaCreditoHTML.className = 'card-registrada-denunciada'
+        eleccion = prompt('Confirma la denuncia de la tarjeta de credito perteneciente al banco ' + lista[2] + ' a nombre de ' + lista[0] + '? Ingrese 1 para confirmar y 0 para desestimar')
+        while (eleccion != 0 && eleccion != 1) {
+            eleccion = prompt ('Opción equivocada vuelva a ingresar: 1 para confirmar denuncia, 0 para desestimarla.')
+        }
+        if (eleccion == 1) {
+            alert ('Su tarjeta ha sido denunciada, pongase en contacto con su banco para recibir información respectiva a la nueva')
+            tarjetaCreditoHTML.className = 'card-registrada-denunciada'
+        }
     }
 }
 if (eleccionTarj == 0) {
