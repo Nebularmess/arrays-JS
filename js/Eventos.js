@@ -23,11 +23,11 @@ function denuncia () {
     }
 }
 function denunciaDebitoEvento () {
-    alert ('Su tarjeta ha sido denunciada, pongase en contacto con su banco para recibir información respectiva a la nueva, proseguimos con su tarjeta de credito')
+    alert ('Su tarjeta ha sido denunciada, pongase en contacto con su banco para recibir información respectiva a la nueva.')
     tarjeta.className = 'card-registrada-denunciada'
 }
 function denunciaCreditoEvento () {
-    alert ('Su tarjeta ha sido denunciada, pongase en contacto con su banco para recibir información respectiva a la nueva, proseguimos con su tarjeta de credito')
+    alert ('Su tarjeta ha sido denunciada, pongase en contacto con su banco para recibir información respectiva a la nueva.')
     tarjetaCreditoHTML.className = 'card-registrada-denunciada'
 }
 function youShallNotPass () {
