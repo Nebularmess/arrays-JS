@@ -36,3 +36,15 @@
     align-items: center;
     margin-bottom: 2px;
 }
+.denunciaDebito {
+    display: none
+}
+.denunciaDebito__habilitado {
+    display: inline-block
+}
+.denunciaCredito {
+    display: none
+}
+.denunciaCredito__habilitado {
+    display: inline-block
+}
